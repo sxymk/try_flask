@@ -1,0 +1,23 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>首页</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>我是首页</h1>#}
+{#</body>#}
+{#</html>#}
+{% extends "base.html" %}
+
+{% block title %}
+    sxy首页
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/index.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h1>我是首页</h1>
+{% endblock %}

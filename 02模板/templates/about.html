@@ -1,0 +1,23 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>关于我们</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>我是lyh爸爸{{ username|length }}</h1>#}
+{#    <div>{{ books}}</div>#}
+{#    <div>{{ books|join(",") }}</div>#}
+{#</body>#}
+{#</html>#}
+{% extends "base.html" %}
+
+{% block title %}
+    关于我
+{% endblock %}
+
+{% block body %}
+    <h1>我是lyh爸爸{{ username|length }}</h1>
+    <div>{{ books}}</div>
+    <div>{{ books|join(",") }}</div>
+{% endblock %}
